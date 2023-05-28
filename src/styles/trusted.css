@@ -1,0 +1,29 @@
+.trusted-img-faded{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    filter: grayscale(50%);
+    opacity: 50%;
+    height: 40px;
+    transition: .5s;
+}
+
+.trusted-img{
+    position: absolute;
+    top: 400%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    height: 40px;
+    transition: .5s;
+}
+
+.trusted-item{
+    height: 56px;
+}
+.trusted-item:hover .trusted-img-faded{
+    top: -300%;
+}
+.trusted-item:hover .trusted-img{
+    top: 50%;
+}

@@ -1,0 +1,12 @@
+.nav-logo{
+    width: 70px;
+    height: 70px;
+    max-width: 70px;
+}
+
+.mobile-navbar .nav-logo{
+    margin: auto;
+    padding-top: 10px;
+    display: flex;
+    object-fit: contain;
+}

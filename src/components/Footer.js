@@ -11,7 +11,7 @@ function Footer() {
     const theme = useTheme()
   return (
     <SectionBox>
-        <SectionContentBox data-aos="fade-up">
+        <SectionContentBox data-aos="fade-right">
             <Grid container alignItems={"flex-start"}>
                 <Grid item md={4} sm={6} xs={12} alignItems={"flex-start"}>
                     <Grid container alignItems={"center"}>

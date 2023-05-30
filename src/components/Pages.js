@@ -6,7 +6,7 @@ import styled from '@emotion/styled';
 import { GradientBoxRight, darkTheme, lightTheme, useThemeMode } from '../contexts/ThemeContext'
 import Navbar from './navbar/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import About from './About';
+import About from './about/About';
 import Footer from './Footer';
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({

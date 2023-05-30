@@ -105,9 +105,7 @@ export const lightTheme = createTheme({
       '50%': { transform: 'rotate(20deg)', top:"150px" },
     },
   }));
-  // borderRadius:"15px",
-  // borderTop:"1px solid rgba(255, 255, 255, 0.5)",
-  // borderLeft:"1px solid rgba(255, 255, 255, 0.5)",
+
   export const GradientBoxRight = styled(Box)(({theme}) => ({
     position:"absolute",
     backgroundImage: `linear-gradient(45deg, ${theme.palette.primary.main} 30%, ${theme.palette.secondary.main} 90%)`,

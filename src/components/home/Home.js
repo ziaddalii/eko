@@ -9,6 +9,7 @@ import Feedbacks from './Feedbacks'
 import Pricing from './Pricing'
 import OurStatistics from './OurStatistics'
 import ContactUs from './ContactUs'
+import Footer from '../Footer';
 
 
 function Home() {

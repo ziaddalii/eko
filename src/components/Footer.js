@@ -55,7 +55,7 @@ function Footer() {
                     </Grid>
                 </Grid>
                 <Grid container item md={4} sm={6} xs={12}>
-                    <Typography component='p' fontWeight={"bold"} fontSize={"24px"}>Services</Typography>
+                    <Typography component='p' fontWeight={"bold"} fontSize={"24px"}>Contact</Typography>
                     <Grid container item marginTop={"1rem"} xs={12} alignItems={"center"}>
                         <EmailIcon fontSize='small' sx={{
                         color:theme.palette.text.primary,

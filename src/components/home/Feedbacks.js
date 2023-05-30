@@ -1,6 +1,6 @@
 import { Box, Grid, Typography, useTheme } from '@mui/material'
 import React, { useState, useEffect } from 'react'
-import { SectionBox, SectionContentBox, SectionTitle } from '../../contexts/ThemeContext'
+import { GradientBoxLeft, SectionBox, SectionContentBox, SectionTitle } from '../../contexts/ThemeContext'
 import User from "../../images/Feedbacks/user.png"
 import Stars from "../../images/Feedbacks/stars.png"
 import "../../styles/feedbacks.css"
@@ -37,6 +37,21 @@ function Feedbacks() {
 
   return (
     <SectionBox>
+        <GradientBoxLeft></GradientBoxLeft>
+        <Box sx={{
+            position:"absolute",
+            top:"50%",
+            left:"50%",
+            transform:"translate(-50% , -50%)",
+            backgroundImage: `linear-gradient(45deg, ${theme.palette.primary.main} 30%, ${theme.palette.secondary.main} 90%)`,
+            height: "30vw",
+            width: "30vw",
+            minHeight: "200px",
+            minWidth:"200px",
+            borderRadius:"50%",
+            filter: "blur(200px)",
+        }}></Box>
+
         <SectionContentBox>
             <Grid container data-aos="fade-right" alignItems={"center"} justifyContent={"space-between"} paddingBottom={"2rem"}>
                 <Grid item>

@@ -14,7 +14,7 @@ function Navbar() {
     <AppBar sx={{
       position:'fixed', 
       background:"rgba(255,255,255,.1)", 
-      backdropFilter:"blur(200px)",
+      backdropFilter:"blur(50px)",
       boxShadow:"none",
   }}>
       <Toolbar>

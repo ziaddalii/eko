@@ -13,7 +13,6 @@ function OurStatistics() {
 
     const StatisticContainer = styled(Paper)(({theme}) => ({
         backgroundImage: `linear-gradient(45deg, rgba(50,50,50,.1) 30%, rgba(255,255,255,.1) 90%)`,
-        backdropFilter:"blur(200px)",
         padding:"2rem",
         transition:".2s",
         borderLeft:"solid 1px rgba(255,255,255,.1)",

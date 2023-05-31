@@ -12,7 +12,6 @@ function TrustedBy() {
   return (
     <SectionBox sx={{
         backgroundImage: `linear-gradient(45deg, ${theme.palette.secondary.main} 30%, ${theme.palette.contrastColor.main} 90%)`,
-        backdropFilter:"blur(200px)",
     }}>
         <Typography component={"p"} paddingTop={"1rem"} textAlign={"center"} fontWeight={"bold"} color={theme.palette.common.black}>TRUSTED BY</Typography>
         <Container sx={{paddingY:"1rem"}}>

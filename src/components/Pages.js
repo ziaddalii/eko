@@ -69,7 +69,6 @@ function Pages() {
           <Route exact path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
         </Routes>
-        <Footer/>
 
       </BrowserRouter>
     </ThemeProvider>

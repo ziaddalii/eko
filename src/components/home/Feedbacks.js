@@ -37,7 +37,6 @@ function Feedbacks() {
 
   return (
     <SectionBox>
-        <GradientBoxLeft></GradientBoxLeft>
         <Box sx={{
             position:"absolute",
             top:"50%",

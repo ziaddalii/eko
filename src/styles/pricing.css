@@ -91,17 +91,6 @@
     font-style: italic;
     transform: rotate(90deg);
   }
-  /* .card .view.back .text {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    right: 30px;
-    color: #fff;
-    font-size: 10px;
-    line-height: 1.4em;
-    font-weight: 300;
-    transform: rotate(90deg);
-  } */
 
 .js-tilt-glare{
   border-radius: 15px!important;

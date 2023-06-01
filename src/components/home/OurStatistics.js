@@ -20,9 +20,6 @@ function OurStatistics() {
         boxShadow: "10px 10px 32px 0px rgba(0,0,0,0.1)",
         webkitBoxShadow: "10px 10px 32px 0px rgba(0,0,0,0.1)",
         mozBoxShadow: "10px 10px 32px 0px rgba(0,0,0,0.1)",
-        "&:hover": {
-
-        },
     }))
   return (
     

@@ -8,7 +8,6 @@
     aspect-ratio: 1;
     object-fit: cover;
     cursor: pointer;
-
     padding: 10px;
     background-image: linear-gradient(45deg, rgba(50,50,50,.1) 30%, rgba(255,255,255,.1) 90%);
     backdrop-filter:blur(10px);

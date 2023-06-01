@@ -6,7 +6,7 @@ function WhoWeAre() {
     const theme = useTheme()
 
   return (
-    <Box className="animation-layer parallax" id="who-we-are"
+    <Box
     padding={{md:"2rem", xs:"1rem"}}
     width={{md:"65%", sm:"80%", xs:"90%"}}
     sx={{

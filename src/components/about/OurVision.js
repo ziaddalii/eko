@@ -8,13 +8,9 @@ function OurVision() {
 
   return (
     <Box data-aos="fade-right" margin={"auto"} 
+    padding={{md:"2rem", xs:"0"}}
     width={{md:"65%", sm:"80%", xs:"90%"}}
-    sx={{
-        padding:"3rem 0",
-        [theme.breakpoints.down('sm')]: {
-          padding: '3rem 2rem',
-        },
-    }}>
+    >
         <Typography component={"p"} fontSize={"1.5rem"} fontWeight={"bold"} textAlign={"center"} marginY={"1rem"}>Our Vision</Typography>
         <Box margin={"auto"} sx={{width:"140px", height:"2px",  backgroundColor:theme.palette.primary.main}}></Box>
         <Typography component={"p"} width={"90%"} marginTop={"2rem"} marginX={"auto"} fontWeight={"light"} textAlign={"center"} color={theme.palette.text.secondary}>

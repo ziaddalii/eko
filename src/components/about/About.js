@@ -7,6 +7,7 @@ import WhoWeAre from './WhoWeAre'
 import WhyWeAreDifferent from './WhyWeAreDifferent';
 import OurVision from './OurVision';
 import OurMission from './OurMission';
+import OurClients from './OurClients';
 
 
 function About() {
@@ -50,6 +51,7 @@ function About() {
                             <WhyWeAreDifferent/>
                             <OurVision/>
                             <OurMission/>
+                            <OurClients/>
                         </Box>
                 </Box>
             </SectionContentBox>

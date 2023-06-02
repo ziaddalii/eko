@@ -1,14 +1,27 @@
 import { Box, Grid, Typography, useTheme } from '@mui/material'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { GradientBoxLeft, SectionBox, SectionContentBox, SectionTitle } from '../../contexts/ThemeContext'
 import User from "../../images/Feedbacks/user.png"
 import Stars from "../../images/Feedbacks/stars.png"
 import "../../styles/feedbacks.css"
 import { FeedbacksData } from '../../data/FeedbacksData'
+import VanillaTilt from 'vanilla-tilt'
 function Feedbacks() {
     const theme = useTheme()
+    const feedbackRef = useRef(null);
+
     const [feedbacks, setFeedbacks] = useState(FeedbacksData)
     
+    useEffect(() => {
+        if (feedbackRef.current) {
+            VanillaTilt.init(feedbackRef.current, {
+                max: 15,
+                speed: 600,
+                glare:true,
+                "max-glare":0.8,
+            });
+          }
+    }, [feedbacks])
     const handleFeedbackClick = (id) => {
         console.log(id);
         const updatedFeedbacks = FeedbacksData.map((feedback) => {
@@ -62,20 +75,22 @@ function Feedbacks() {
                     feedbacks.map((feedback) => {
                     return feedback.active ?
                         (
-                        <Box key={feedback.id} className='active-feedback'>
-                            <img className="user-pic" src={feedback.userImg}/>
-                            <Grid container justifyContent={"space-between"} alignItems={"center"}>
-                                <Grid item xs={8}>
-                                    <Typography component={"p"} color={theme.palette.text.primary} fontSize="1.5rem" fontWeight="bold">{feedback.username}</Typography>
+                        <Box className='active-feedback'  key={feedback.id}>
+                            <Box ref={feedbackRef} className={"active-feedback-card"} >
+                                <img className="user-pic" src={feedback.userImg}/>
+                                <Grid container justifyContent={"space-between"} alignItems={"center"}>
+                                    <Grid item xs={8}>
+                                        <Typography component={"p"} color={theme.palette.text.primary} fontSize="1.5rem" fontWeight="bold">{feedback.username}</Typography>
+                                    </Grid>
+                                    <Grid container item xs={4} flex={"end"}>
+                                        <img src={Stars}/>
+                                    </Grid>
                                 </Grid>
-                                <Grid container item xs={4} flex={"end"}>
-                                    <img src={Stars}/>
-                                </Grid>
-                            </Grid>
-                            <Typography component={"p"} fontWeight="thin" color={theme.palette.text.primary}>
-                                {feedback.comment}
-                            </Typography>
-                            <Typography component={"p"} marginTop={".75rem"} fontSize={".75rem"} fontWeight="thin" color={theme.palette.text.secondary}>{feedback.date} ago</Typography>
+                                <Typography component={"p"} fontWeight="thin" color={theme.palette.text.primary}>
+                                    {feedback.comment}
+                                </Typography>
+                                <Typography component={"p"} marginTop={".75rem"} fontSize={".75rem"} fontWeight="thin" color={theme.palette.text.secondary}>{feedback.date} ago</Typography>
+                            </Box>
                         </Box>
                         )
                         :

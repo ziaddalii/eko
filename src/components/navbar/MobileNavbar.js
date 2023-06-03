@@ -1,7 +1,7 @@
-import { Box, Grid, Typography, useTheme } from '@mui/material'
+import { Box, Grid, useTheme } from '@mui/material'
 import React from 'react'
 import Logo from "../../images/logo.png"
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { TypographyLink } from '../../contexts/ThemeContext'
 
 function MobileNavbar() {
@@ -13,7 +13,6 @@ function MobileNavbar() {
             <TypographyLink variant='span' my={".5rem"} component={NavLink} to="/">home</TypographyLink>
             <TypographyLink variant='span' my={".5rem"} component={NavLink} to="/about">about us</TypographyLink>
             <TypographyLink variant='span' my={".5rem"} component={NavLink} to="/services">services</TypographyLink>
-            <TypographyLink variant='span' my={".5rem"} component={NavLink} to="/hosting">hosting</TypographyLink>
             <TypographyLink variant='span' my={".5rem"} component={NavLink} to="/portfolio">portfolio</TypographyLink>
             <TypographyLink variant='span' my={".5rem"} component={NavLink} to="/blog">blog</TypographyLink>
             <TypographyLink variant='span' my={".5rem"} component={NavLink} to="/contactus">contact us</TypographyLink>

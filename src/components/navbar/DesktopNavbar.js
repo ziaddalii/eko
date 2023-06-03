@@ -10,7 +10,6 @@ function DesktopNavbar() {
             <TypographyLink variant='span' component={NavLink} to="/">home</TypographyLink>
             <TypographyLink variant='span' component={NavLink} to="/about">about us</TypographyLink>
             <TypographyLink variant='span' component={NavLink} to="/services">services</TypographyLink>
-            <TypographyLink variant='span' component={NavLink} to="/hosting">hosting</TypographyLink>
             <TypographyLink variant='span' component={NavLink} to="/portfolio">portfolio</TypographyLink>
             <TypographyLink variant='span' component={NavLink} to="/blog">blog</TypographyLink>
             <TypographyLink variant='span' component={NavLink} to="/contactus">contact us</TypographyLink>

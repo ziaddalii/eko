@@ -41,7 +41,7 @@
     box-shadow: 10px 10px 32px 0px rgba(0,0,0,0.1);
     webkit-box-shadow: 10px 10px 32px 0px rgba(0,0,0,0.1);
     moz-box-shadow: 10px 10px 32px 0px rgba(0,0,0,0.1);
-    padding:1.5rem;
+    padding:1rem;
     
     z-index: 2;
   }
@@ -53,7 +53,7 @@
     box-shadow: 10px 10px 32px 0px rgba(0,0,0,0.1);
     webkit-box-shadow: 10px 10px 32px 0px rgba(0,0,0,0.1);
     moz-box-shadow: 10px 10px 32px 0px rgba(0,0,0,0.1);
-    padding:1.5rem;
+    padding:1rem;
     transform: rotateY(180deg);
     z-index: 1;
   }

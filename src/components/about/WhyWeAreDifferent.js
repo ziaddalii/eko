@@ -24,14 +24,13 @@ function WhyWeAreDifferent() {
                                     fontSize:"5rem",
                                     width:"100%",
                                     color:theme.palette.primary.main,
-                                    marginBottom:"2rem",
                                 }}></StarIcon>
-                                <Typography component={"p"} textAlign={"center"}>100% Customer Satisfaction</Typography>
+                                <Typography component={"p"} textAlign={"center"} fontSize={{xs:"12px", md:"16px"}}>100% Customer Satisfaction</Typography>
                             </Grid>
                         </Grid>
                         <Grid container justifyContent={"center"} alignItems={"center"} className="flip-card-back">
                             <Grid item>
-                                <Typography component={"p"} textAlign={"center"}>
+                                <Typography component={"p"} textAlign={"center"} fontSize={{xs:"12px", md:"16px"}}>
                                 Gaining the satisfaction of our customers is our primary and most important goal
                                 </Typography>
                             </Grid>
@@ -48,13 +47,14 @@ function WhyWeAreDifferent() {
                                     fontSize:"5rem",
                                     width:"100%",
                                     color:theme.palette.primary.main,
-                                    marginBottom:"2rem",                                }}></RocketLaunchIcon>
-                                <Typography component={"p"} textAlign={"center"}>Technology Pioneers</Typography>
+                                    marginBottom:"1rem",
+                                }}></RocketLaunchIcon>
+                                <Typography component={"p"} textAlign={"center"} fontSize={{xs:"12px", md:"16px"}}>Technology Pioneers</Typography>
                             </Grid>
                         </Grid>
                         <Grid container justifyContent={"center"} alignItems={"center"} className="flip-card-back">
                             <Grid item>
-                                <Typography component={"p"} textAlign={"center"}>
+                                <Typography component={"p"} textAlign={"center"} fontSize={{xs:"12px", md:"16px"}}>
                                 We make sure that the software solutions offered by us are always developed using the latest technologies available
                                 </Typography>
                             </Grid>
@@ -71,13 +71,13 @@ function WhyWeAreDifferent() {
                                     fontSize:"5rem",
                                     width:"100%",
                                     color:theme.palette.primary.main,
-                                    marginBottom:"2rem",                                }}></SpeedIcon>
-                                <Typography component={"p"} textAlign={"center"}>Best performance at competitive prices</Typography>
+                                    marginBottom:"1rem",                                }}></SpeedIcon>
+                                <Typography component={"p"} textAlign={"center"} fontSize={{xs:"12px", md:"16px"}}>Best performance at competitive prices</Typography>
                             </Grid>
                         </Grid>
                         <Grid container justifyContent={"center"} alignItems={"center"} className="flip-card-back">
                             <Grid item>
-                                <Typography component={"p"} textAlign={"center"}>Providing outstanding software solutions at an affordable cost</Typography>
+                                <Typography component={"p"} textAlign={"center"} fontSize={{xs:"12px", md:"16px"}}>Providing outstanding software solutions at an affordable cost</Typography>
                             </Grid>
                         </Grid>
                     </div>
@@ -92,13 +92,13 @@ function WhyWeAreDifferent() {
                                     fontSize:"5rem",
                                     width:"100%",
                                     color:theme.palette.primary.main,
-                                    marginBottom:"2rem",                                }}></TeamWorkIcon>
-                                <Typography component={"p"} textAlign={"center"}>Distinguished Team Work</Typography>
+                                    marginBottom:"1rem",                                }}></TeamWorkIcon>
+                                <Typography component={"p"} textAlign={"center"} fontSize={{xs:"12px", md:"16px"}}>Distinguished Team Work</Typography>
                             </Grid>
                         </Grid>
                         <Grid container justifyContent={"center"} alignItems={"center"} className="flip-card-back">
                             <Grid item>
-                                <Typography component={"p"} textAlign={"center"}>We are characterized as a excellent team by having the best talents Ever</Typography>
+                                <Typography component={"p"} textAlign={"center"} fontSize={{xs:"12px", md:"16px"}}>We are characterized as a excellent team by having the best talents Ever</Typography>
                             </Grid>
                         </Grid>
                     </div>
@@ -113,14 +113,14 @@ function WhyWeAreDifferent() {
                                     fontSize:"5rem",
                                     width:"100%",
                                     color:theme.palette.primary.main,
-                                    marginBottom:"2rem",                                
+                                    marginBottom:"1rem",                                
                                 }}></HandshakeIcon>
-                                <Typography component={"p"} textAlign={"center"}>After Sales Service</Typography>
+                                <Typography component={"p"} textAlign={"center"} fontSize={{xs:"12px", md:"16px"}}>After Sales Service</Typography>
                             </Grid>
                         </Grid>
                         <Grid container justifyContent={"center"} alignItems={"center"} className="flip-card-back">
                             <Grid item>
-                                <Typography component={"p"} textAlign={"center"}>We maintain constant communication with you during and after delivering The project</Typography>
+                                <Typography component={"p"} textAlign={"center"} fontSize={{xs:"12px", md:"16px"}}>We maintain constant communication with you during and after delivering The project</Typography>
                             </Grid>
                         </Grid>
                     </div>
@@ -135,14 +135,14 @@ function WhyWeAreDifferent() {
                                     fontSize:"5rem",
                                     width:"100%",
                                     color:theme.palette.primary.main,
-                                    marginBottom:"2rem",                                
+                                    marginBottom:"1rem",                                
                                 }}></AccessTimeIcon>
-                                <Typography component={"p"} textAlign={"center"}>Productivity speed</Typography>
+                                <Typography component={"p"} textAlign={"center"} fontSize={{xs:"12px", md:"16px"}}>Productivity speed</Typography>
                             </Grid>
                         </Grid>
                         <Grid container justifyContent={"center"} alignItems={"center"} className="flip-card-back">
                             <Grid item>
-                                <Typography component={"p"} textAlign={"center"}>applying The agile concept ensures that our publications will be delivered in a short period of time</Typography>
+                                <Typography component={"p"} textAlign={"center"} fontSize={{xs:"12px", md:"16px"}}>applying The agile concept ensures that our publications will be delivered in a short period of time</Typography>
                             </Grid>
                         </Grid>
                     </div>

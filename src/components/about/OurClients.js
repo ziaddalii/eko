@@ -55,7 +55,7 @@ function OurClients() {
             },
         ]
   return (
-    <SectionBox data-aos="fade-up">
+    <SectionBox data-aos="fade-right">
         <Typography component={"p"} fontSize={"1.5rem"} fontWeight={"bold"} textAlign={"center"} marginY={"1rem"}>Our Clients</Typography>
         <Box margin={"auto"} sx={{width:"140px", height:"2px",  backgroundColor:theme.palette.primary.main}}></Box>
         <SectionContentBox>
@@ -72,7 +72,7 @@ function OurClients() {
                         return(
                             <Grid key={client.id} item container justifyContent={"center"} xs={12} md={4}>
                                 <SwiperSlide key={client.id}>
-                                    <img style={{height:"60px", padding:"1rem"}} src={client.clientlogo}/>
+                                    <img style={{height:"80px", padding:"1rem"}} src={client.clientlogo}/>
                                 </SwiperSlide>
                             </Grid>
                         )

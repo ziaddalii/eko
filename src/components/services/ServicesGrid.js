@@ -41,24 +41,24 @@ function ServicesGrid() {
             <Grid item xs={12} sm={6} md={4}>
                 <ContainerPaper elevation={1}>
                     <img src={Development} style={{maxHeight:"190px"}}/>
-                    <Typography component={"p"} fontSize={"1.5rem"} fontWeight={"bold"} marginTop={"1rem"}>Development</Typography>
-                    <Typography component={"p"} fontWeight={"light"} color={theme.palette.text.secondary}>The best astonishing apps and websites with high quality which users deserve</Typography>
+                    <Typography component={"p"} fontSize="24px" fontWeight={"bold"} marginTop={"1rem"}>Development</Typography>
+                    <Typography component={"p"} fontSize="12px" fontWeight={"light"} color={theme.palette.text.secondary}>The best astonishing apps and websites with high quality which users deserve</Typography>
                     <Button variant={"contained"} sx={{marginTop:".5rem",}}>More</Button>
                 </ContainerPaper>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
                 <ContainerPaper elevation={1}>
                     <img src={DigitalMarketing} style={{maxHeight:"190px"}}/>
-                    <Typography component={"p"} fontSize={"1.5rem"} fontWeight={"bold"} marginTop={"1rem"}>Digital Marketing</Typography>
-                    <Typography component={"p"} fontWeight={"light"} color={theme.palette.text.secondary}>Giving our clients the level of service and support they expect in our services.</Typography>
+                    <Typography component={"p"} fontSize="24px" fontWeight={"bold"} marginTop={"1rem"}>Digital Marketing</Typography>
+                    <Typography component={"p"} fontSize="12px" fontWeight={"light"} color={theme.palette.text.secondary}>Giving our clients the level of service and support they expect in our services.</Typography>
                     <Button variant={"contained"} sx={{marginTop:".5rem",}}>More</Button>
                 </ContainerPaper>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
                 <ContainerPaper elevation={1}>
                     <img src={CreativeDesign} style={{maxHeight:"190px"}}/>
-                    <Typography component={"p"} fontSize={"1.5rem"} fontWeight={"bold"} marginTop={"1rem"}>Creative Design</Typography>
-                    <Typography component={"p"} fontWeight={"light"} color={theme.palette.text.secondary}>We provide the best UI/UX Design, Campaign Designs Animation, & Video production</Typography>
+                    <Typography component={"p"} fontSize="24px" fontWeight={"bold"} marginTop={"1rem"}>Creative Design</Typography>
+                    <Typography component={"p"} fontSize="12px" fontWeight={"light"} color={theme.palette.text.secondary}>We provide the best UI/UX Design, Campaign Designs Animation, & Video production</Typography>
                     <Button variant={"contained"} sx={{marginTop:".5rem"}}>More</Button>
                 </ContainerPaper>
             </Grid>
@@ -81,24 +81,24 @@ function ServicesGrid() {
                     },
                 }}>
                     <img src={CreativeDesign} style={{maxHeight:"190px"}}/>
-                    <Typography component={"p"} fontSize={"1.5rem"} fontWeight={"bold"} marginTop={"1rem"}>Creative Design</Typography>
-                    <Typography component={"p"} fontWeight={"light"} color={theme.palette.text.secondary}>We provide the best UI/UX Design, Campaign Designs Animation, & Video production</Typography>
+                    <Typography component={"p"} fontSize="24px" fontWeight={"bold"} marginTop={"1rem"}>Creative Design</Typography>
+                    <Typography component={"p"} fontSize="12px" fontWeight={"light"} color={theme.palette.text.secondary}>We provide the best UI/UX Design, Campaign Designs Animation, & Video production</Typography>
                     <Button variant={"contained"} sx={{marginTop:".5rem"}}>More</Button>
                 </ContainerPaper>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
                 <ContainerPaper elevation={1}>
                     <img src={CreativeDesign} style={{maxHeight:"190px"}}/>
-                    <Typography component={"p"} fontSize={"1.5rem"} fontWeight={"bold"} marginTop={"1rem"}>Creative Design</Typography>
-                    <Typography component={"p"} fontWeight={"light"} color={theme.palette.text.secondary}>We provide the best UI/UX Design, Campaign Designs Animation, & Video production</Typography>
+                    <Typography component={"p"} fontSize="24px" fontWeight={"bold"} marginTop={"1rem"}>Creative Design</Typography>
+                    <Typography component={"p"} fontSize="12px" fontWeight={"light"} color={theme.palette.text.secondary}>We provide the best UI/UX Design, Campaign Designs Animation, & Video production</Typography>
                     <Button variant={"contained"} sx={{marginTop:".5rem"}}>More</Button>
                 </ContainerPaper>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
                 <ContainerPaper elevation={1}>
                     <img src={CreativeDesign} style={{maxHeight:"190px"}}/>
-                    <Typography component={"p"} fontSize={"1.5rem"} fontWeight={"bold"} marginTop={"1rem"}>Creative Design</Typography>
-                    <Typography component={"p"} fontWeight={"light"} color={theme.palette.text.secondary}>We provide the best UI/UX Design, Campaign Designs Animation, & Video production</Typography>
+                    <Typography component={"p"} fontSize="24px" fontWeight={"bold"} marginTop={"1rem"}>Creative Design</Typography>
+                    <Typography component={"p"} fontSize="12px" fontWeight={"light"} color={theme.palette.text.secondary}>We provide the best UI/UX Design, Campaign Designs Animation, & Video production</Typography>
                     <Button variant={"contained"} sx={{marginTop:".5rem"}}>More</Button>
                 </ContainerPaper>
             </Grid>

@@ -15,7 +15,7 @@ function MobileNavbar() {
             <TypographyLink variant='span' my={".5rem"} component={NavLink} to="/services">services</TypographyLink>
             <TypographyLink variant='span' my={".5rem"} component={NavLink} to="/portfolio">portfolio</TypographyLink>
             <TypographyLink variant='span' my={".5rem"} component={NavLink} to="/blog">blog</TypographyLink>
-            <TypographyLink variant='span' my={".5rem"} component={NavLink} to="/contactus">contact us</TypographyLink>
+            <TypographyLink variant='span' my={".5rem"} component={NavLink} to="/contact-us">contact us</TypographyLink>
         </Grid>
     </Box>
   )

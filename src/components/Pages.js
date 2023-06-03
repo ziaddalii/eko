@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import About from './about/About';
 import Footer from './Footer';
 import Services from './services/Services';
+import ContactUs from './contactUs/ContactUs';
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     width: 62,
@@ -70,6 +71,7 @@ function Pages() {
           <Route exact path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/services' element={<Services/>}/>
+          <Route path='/contact-us' element={<ContactUs/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

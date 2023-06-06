@@ -6,14 +6,17 @@ import "../../styles/navbar.css"
 import React, { useState } from 'react'
 import MobileNavbar from './MobileNavbar';
 import DesktopNavbar from './DesktopNavbar';
+import { useThemeMode } from '../../contexts/ThemeContext';
 
 function Navbar() {
   const [toggleSideNavbar, setToggleSideNavbar] = useState(false)
   const theme = useTheme()
+  const {darkMode, setDarkMode} = useThemeMode();
+
   return (
     <AppBar sx={{
-      position:'fixed', 
-      background:"rgba(255,255,255,.1)", 
+      position:'fixed',
+      background:darkMode ? "rgba(255, 255, 255, .1)" : "rgba(255, 255, 255, .3)",
       backdropFilter:"blur(50px)",
       boxShadow:"none",
   }}>

@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Box, Button, Grid, Typography, useTheme } from '@mui/material';
 import { GradientBoxLeft, GradientBoxRight, SectionBox, SectionContentBox } from '../../contexts/ThemeContext';
 import Laptop from "../../images/hero/computing.png";
-import "../../styles/hero.css"
 function Hero() {
     const theme = useTheme()
+    const home = useRef(null)
+    const scrollToNextSection = (elementRef) => {
+        console.log("CLICKED", elementRef);
+        window.scrollTo({
+            top: elementRef.current.offsetHeight,
+            behavior:"smooth",
+        })
+    }
   return (
-    <SectionBox>
+    <SectionBox ref={home}>
         <GradientBoxLeft></GradientBoxLeft>
         <SectionContentBox>
             <Box pt={"4rem"}>
@@ -30,6 +37,7 @@ function Hero() {
                         </Box>
                         <Typography component={"p"} color={theme.palette.text.secondary} fontWeight={"300"}>We believe that we succeed when our clients succeed Which is why we never stop learning</Typography>
                         <Button variant='contained' 
+                        onClick={() => scrollToNextSection(home)}
                         sx={{
                             marginTop:"1rem",
                             background: theme.palette.primary.main,

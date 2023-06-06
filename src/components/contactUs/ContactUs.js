@@ -14,7 +14,7 @@ function ContactUs() {
                 <Box>
                     <Box
                     sx={{
-                        backgroundColor:theme.palette.contrastColor.main,
+                        backgroundColor:"#7A4DCC",
                         borderRadius:"0 0 50% 50%",
                         height:"70vh",
                         width:"150%",
@@ -33,7 +33,7 @@ function ContactUs() {
                             width:"100vw",
                         }}>
                             <Box data-aos="fade-down">
-                                <Typography component={"h2"} fontSize={"56px"} fontWeight={"bold"} textAlign={"center"}>Contact Us</Typography>
+                                <Typography component={"h2"} color={theme.palette.common.white} fontSize={"56px"} fontWeight={"bold"} textAlign={"center"}>Contact Us</Typography>
                             </Box>
                         </Box>
                         </Box>

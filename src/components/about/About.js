@@ -19,7 +19,7 @@ function About() {
                 <Box>
                     <Box
                     sx={{
-                        backgroundColor:theme.palette.contrastColor.main,
+                        backgroundColor:"#7A4DCC",
                         borderRadius:"0 0 50% 50%",
                         height:"90vh",
                         width:"150%",
@@ -38,8 +38,8 @@ function About() {
                             width:"100vw",
                         }}>
                             <Box data-aos="fade-down">
-                                <Typography component={"h2"} fontSize={"56px"} fontWeight={"bold"} textAlign={"center"}>About Us</Typography>
-                                <Typography component={"p"} textAlign={"center"} sx={{
+                                <Typography component={"h2"} color={theme.palette.common.white} fontSize={"56px"} fontWeight={"bold"} textAlign={"center"}>About Us</Typography>
+                                <Typography component={"p"} color={theme.palette.common.white} textAlign={"center"} sx={{
                                     maxWidth: "600px",
                                     margin: "auto",
                                 }}>If you want to Know more about us, you’re in the right place. Read to know how we managed to grow our business so fast.</Typography>

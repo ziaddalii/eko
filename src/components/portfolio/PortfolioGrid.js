@@ -53,7 +53,7 @@ function PortfolioGrid() {
     <Box>
         <Box sx={{ width: '100%' }}>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+                <Tabs value={value} onChange={handleChange} centered>
                     <Tab label="All" {...a11yProps(0)} />
                     <Tab label="Web" {...a11yProps(1)} />
                     <Tab label="Mobile" {...a11yProps(2)} />
@@ -63,10 +63,10 @@ function PortfolioGrid() {
                 <AllProjects/>
             </TabPanel>
             <TabPanel value={value} index={1}>
-                <MobileProjects/>
+                <WebProjects/>
             </TabPanel>
             <TabPanel value={value} index={2}>
-                <WebProjects/>
+                <MobileProjects/>
             </TabPanel>
         </Box>
 

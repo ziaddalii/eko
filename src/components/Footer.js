@@ -43,16 +43,16 @@ function Footer() {
                     <Grid container item md={2} sm={6} xs={12}>
                         <Typography component='p' marginTop={"1rem"} fontWeight={"bold"} fontSize={"24px"}>Services</Typography>
                         <Grid item marginTop={"1rem"} xs={12}>
-                            <TypographyLinkFooter variant='p' component={NavLink} to="/">Creative Design</TypographyLinkFooter>
+                            <TypographyLinkFooter variant='p' component={Link} to="/#">Creative Design</TypographyLinkFooter>
                         </Grid>
                         <Grid item marginTop={"1rem"} xs={12}>
-                            <TypographyLinkFooter variant='p' component={NavLink} to="/about">Development</TypographyLinkFooter>
+                            <TypographyLinkFooter variant='p' component={Link} to="/#">Development</TypographyLinkFooter>
                         </Grid>
                         <Grid item marginTop={"1rem"} xs={12}>
-                            <TypographyLinkFooter variant='p' component={NavLink} to="/services">Digital Marketing</TypographyLinkFooter>
+                            <TypographyLinkFooter variant='p' component={Link} to="/#">Digital Marketing</TypographyLinkFooter>
                         </Grid>
                         <Grid item marginTop={"1rem"} xs={12}>
-                            <TypographyLinkFooter variant='p' component={NavLink} to="/services">Others</TypographyLinkFooter>
+                            <TypographyLinkFooter variant='p' component={Link} to="/#">Others</TypographyLinkFooter>
                         </Grid>
                     </Grid>
                     <Grid container item md={4} sm={6} xs={12}>

@@ -8,31 +8,37 @@ export const PortfolioData = [
     {
         imgUrl:Portfolio1,
         desc:"Web Development and Branding for MIX",
+        category:"web",
         id:1
     },
     {
         imgUrl:Portfolio2,
         desc:"UI/UX Design for CHATBOX",
+        category:"web",
         id:2
     },
     {
         imgUrl:Portfolio3,
         desc:"Web development for SOAX",
+        category:"web",
         id:3
     },
     {
         imgUrl:Portfolio4,
         desc:"UI Design for CHARTIX",
+        category:"web",
         id:4
     },
     {
         imgUrl:Portfolio5,
         desc:"Mobile App and Branding for STUDD",
+        category:"mobile",
         id:5
     },
     {
         imgUrl:Portfolio6,
         desc:"Mobile App and UI Design for CAMRY",
+        category:"mobile",
         id:6
     },
 ]

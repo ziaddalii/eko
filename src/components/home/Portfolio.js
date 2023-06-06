@@ -24,18 +24,17 @@ function Portfolio() {
                 {
                     PortfolioData.map((portfolioPost) => {
                         return (
-                            <Grid item key={portfolioPost.id} xs={12} sm={6} md={4} overflow="hidden" height={"230px"}
+                            <Grid item key={portfolioPost.id} xs={12} sm={6} md={4} overflow="hidden" height={"230px"}>
+                            <Paper elevation={0}
                             sx={{
+                                position:"relative",
+                                background:"transparent",
                                 '&:hover .portfolio-desc':{
                                     bottom:"7%",
                                     opacity:"100%",
-                                },
+                                }
                             }}
                             >
-                            <Paper elevation={0} sx={{
-                                position:"relative",
-                                background:"transparent",
-                            }}>
                                 <img className='portfolio-img' src={portfolioPost.imgUrl} style={{height:"215px", objectFit:"cover"}}/>
                                 <Box className="portfolio-desc" sx={{
                                     background:"rgba(0,0,0,.15)", 

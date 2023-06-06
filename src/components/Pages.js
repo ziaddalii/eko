@@ -10,6 +10,7 @@ import About from './about/About';
 import Footer from './Footer';
 import Services from './services/Services';
 import ContactUs from './contactUs/ContactUs';
+import Portfolio from './portfolio/Portfolio';
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     width: 62,
@@ -72,6 +73,7 @@ function Pages() {
           <Route path='/about' element={<About/>}/>
           <Route path='/services' element={<Services/>}/>
           <Route path='/contact-us' element={<ContactUs/>}/>
+          <Route path='/portfolio' element={<Portfolio/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

@@ -12,7 +12,7 @@ function Footer() {
   return (
     <SectionBox>
         <SectionContentBox>
-            <Box data-aos="fade-right">
+            <Box>
                 <Grid container alignItems={"flex-start"}>
                     <Grid item md={4} sm={6} xs={12} alignItems={"flex-start"}>
                         <Grid container alignItems={"center"}>

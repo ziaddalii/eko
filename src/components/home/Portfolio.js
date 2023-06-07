@@ -2,9 +2,11 @@ import React from 'react'
 import { GradientBoxRight, SectionBox, SectionContentBox, SectionTitle } from '../../contexts/ThemeContext'
 import { Box, Button, Grid, Paper, Typography, useTheme } from '@mui/material'
 import { PortfolioData } from '../../data/PortfolioData'
+import { useNavigate } from 'react-router-dom'
 
 function Portfolio() {
   const theme = useTheme()
+  const navigate = useNavigate()
 
   return (
     <SectionBox sx={{
@@ -17,7 +19,7 @@ function Portfolio() {
                     <SectionTitle>Portfolio</SectionTitle>
                 </Grid>
                 <Grid item>
-                    <Button variant={"contained"}>Show More</Button>
+                    <Button onClick={() => navigate("/portfolio")} variant={"contained"}>Show More</Button>
                 </Grid>
             </Grid>
             <Grid container data-aos="fade-right" spacing={"1rem"}>

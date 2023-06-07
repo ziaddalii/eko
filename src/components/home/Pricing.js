@@ -82,9 +82,6 @@ function Pricing() {
                 <Grid item>
                     <SectionTitle>Pricing</SectionTitle>
                 </Grid>
-                <Grid item>
-                    <Button variant={"contained"}>Show More</Button>
-                </Grid>
             </Grid>
             <Grid container spacing={"1rem"} justifyContent={"center"} data-aos="fade-left">
                 <Grid item xs={12} sm={6} md={3}>

@@ -23,7 +23,6 @@ function Feedbacks() {
           }
     }, [feedbacks])
     const handleFeedbackClick = (id) => {
-        console.log(id);
         const updatedFeedbacks = FeedbacksData.map((feedback) => {
           if (feedback.id === id) {
             return { ...feedback, active: true };

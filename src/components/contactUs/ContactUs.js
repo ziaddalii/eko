@@ -7,6 +7,9 @@ import ContactUsForm from './ContactUsForm'
 
 function ContactUs() {
     const theme = useTheme()
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
     return (
         <SectionBox>

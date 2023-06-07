@@ -1,15 +1,21 @@
 import React from 'react'
 import { SectionBox, SectionContentBox, SectionTitle } from '../../contexts/ThemeContext'
 import { Box, Button, Grid, MenuItem, Paper, TextField, Typography, useTheme } from '@mui/material'
+import { useNavigate } from 'react-router-dom'
 
 function ContactUs() {
     const theme = useTheme()
+    const navigate = useNavigate()
+
   return (
     <SectionBox>
         <SectionContentBox>
             <Grid container data-aos="fade-right" alignItems={"center"} justifyContent={"space-between"} paddingBottom={"2rem"}>
                 <Grid item>
                     <SectionTitle>Contact Us</SectionTitle>
+                </Grid>
+                <Grid item>
+                    <Button onClick={() => navigate("/contact-us")} variant={"contained"}>Show More</Button>
                 </Grid>
             </Grid>
             <Grid container data-aos="fade-left">

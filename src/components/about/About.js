@@ -12,7 +12,9 @@ import OurClients from './OurClients';
 
 function About() {
     const theme = useTheme()
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
         <SectionBox>
             <SectionContentBox>

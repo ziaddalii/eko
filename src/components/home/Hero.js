@@ -6,7 +6,6 @@ function Hero() {
     const theme = useTheme()
     const home = useRef(null)
     const scrollToNextSection = (elementRef) => {
-        console.log("CLICKED", elementRef);
         window.scrollTo({
             top: elementRef.current.offsetHeight,
             behavior:"smooth",

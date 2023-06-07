@@ -8,6 +8,9 @@ import PortfolioGrid from './PortfolioGrid'
 
 function Portfolio() {
     const theme = useTheme()
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
         <SectionBox>
             <SectionContentBox>

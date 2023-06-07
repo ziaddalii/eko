@@ -1,5 +1,5 @@
 import { Box, Typography, useTheme } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { BlueButton, GradientBoxLeft, SectionBox, SectionContentBox } from '../../contexts/ThemeContext'
 import ServicesGrid from './ServicesGrid'
@@ -8,7 +8,9 @@ import ServicesGrid from './ServicesGrid'
 
 function Services() {
     const theme = useTheme()
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
         <SectionBox>
             <SectionContentBox>

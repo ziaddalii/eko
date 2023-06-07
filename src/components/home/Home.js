@@ -1,5 +1,5 @@
 import { Box, Typography, useTheme } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BlueButton, GradientBoxLeft, SectionBox, SectionContentBox } from '../../contexts/ThemeContext'
 import Hero from './Hero'
 import Services from './Services'
@@ -14,6 +14,9 @@ import Footer from '../Footer';
 
 function Home() {
   const theme = useTheme()
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <SectionBox sx={{position:"relative", backgroundColor: `${theme.palette.backgroundColor.main}`}}>
           <Hero/>

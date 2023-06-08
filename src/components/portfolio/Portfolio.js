@@ -12,7 +12,7 @@ function Portfolio() {
         window.scrollTo(0, 0);
       }, []);
     return (
-        <SectionBox>
+        <SectionBox sx={{overflowX:"hidden",}}>
             <SectionContentBox>
                 <Box>
                     <Box

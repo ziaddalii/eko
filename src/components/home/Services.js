@@ -81,7 +81,7 @@ function Services() {
   const navigate = useNavigate()
 
   return (
-    <SectionBox>
+    <SectionBox sx={{overflowX:"hidden",}}>
         <SectionContentBox>
             <Grid container data-aos="fade-right" alignItems={"center"} justifyContent={"space-between"} paddingBottom={"2rem"}>
                 <Grid item>

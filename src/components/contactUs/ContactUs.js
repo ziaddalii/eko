@@ -12,7 +12,7 @@ function ContactUs() {
       }, []);
 
     return (
-        <SectionBox>
+        <SectionBox sx={{overflowX:"hidden",}}>
             <SectionContentBox>
                 <Box>
                     <Box

@@ -18,7 +18,11 @@ function Home() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <SectionBox sx={{position:"relative", backgroundColor: `${theme.palette.backgroundColor.main}`}}>
+    <SectionBox sx={{
+      position:"relative", 
+      backgroundColor: `${theme.palette.backgroundColor.main}`, 
+      overflowX:"hidden",
+    }}>
           <Hero/>
           <Services/>
           <Portfolio/>

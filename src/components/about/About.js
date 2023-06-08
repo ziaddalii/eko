@@ -16,7 +16,7 @@ function About() {
         window.scrollTo(0, 0);
       }, []);
     return (
-        <SectionBox>
+      <SectionBox sx={{overflowX:"hidden",}}>
             <SectionContentBox>
                 <Box>
                     <Box
@@ -47,14 +47,14 @@ function About() {
                                 }}>If you want to Know more about us, you’re in the right place. Read to know how we managed to grow our business so fast.</Typography>
                             </Box>
                         </Box>
-                        </Box>
-                        <Box marginTop={"65vh"}>
-                            <WhoWeAre/>
-                            <WhyWeAreDifferent/>
-                            <OurVision/>
-                            <OurMission/>
-                            <OurClients/>
-                        </Box>
+                    </Box>
+                    <Box marginTop={"65vh"}>
+                        <WhoWeAre/>
+                        <WhyWeAreDifferent/>
+                        <OurVision/>
+                        <OurMission/>
+                        <OurClients/>
+                    </Box>
                 </Box>
             </SectionContentBox>
         </SectionBox>

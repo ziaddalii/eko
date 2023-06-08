@@ -1,9 +1,9 @@
 import React from 'react'
 import Home from './home/Home'
-import { Box, Switch } from '@mui/material';
+import { Switch } from '@mui/material';
 import {ThemeProvider} from '@mui/system';
 import styled from '@emotion/styled';
-import { GradientBoxRight, darkTheme, lightTheme, useThemeMode } from '../contexts/ThemeContext'
+import { darkTheme, lightTheme, useThemeMode } from '../contexts/ThemeContext'
 import Navbar from './navbar/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import About from './about/About';

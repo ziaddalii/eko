@@ -1,8 +1,7 @@
 import { Box, Typography, useTheme } from '@mui/material'
-import React, { useState, useEffect } from 'react'
+import React, {useEffect } from 'react'
 
-import { BlueButton, GradientBoxLeft, SectionBox, SectionContentBox } from '../../contexts/ThemeContext'
-import Footer from '../Footer';
+import {SectionBox, SectionContentBox } from '../../contexts/ThemeContext'
 import WhoWeAre from './WhoWeAre'
 import WhyWeAreDifferent from './WhyWeAreDifferent';
 import OurVision from './OurVision';

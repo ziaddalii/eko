@@ -1,6 +1,5 @@
-import { Box, Button, Grid, Paper, Typography, styled, useTheme } from '@mui/material'
+import { Box,Typography, useTheme } from '@mui/material'
 import React from 'react'
-import { SectionContentBox } from '../../contexts/ThemeContext'
 
 
 function OurVision() {

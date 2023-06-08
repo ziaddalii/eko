@@ -1,7 +1,6 @@
 import { Box, Grid, Typography, useTheme } from '@mui/material'
 import React, { useState, useEffect, useRef } from 'react'
-import { GradientBoxLeft, SectionBox, SectionContentBox, SectionTitle } from '../../contexts/ThemeContext'
-import User from "../../images/Feedbacks/user.png"
+import {SectionBox, SectionContentBox, SectionTitle } from '../../contexts/ThemeContext'
 import Stars from "../../images/Feedbacks/stars.png"
 import "../../styles/feedbacks.css"
 import { FeedbacksData } from '../../data/FeedbacksData'

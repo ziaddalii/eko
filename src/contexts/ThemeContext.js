@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Box, Button, Container, Switch, Typography } from "@mui/material"
+import { Box, Button, Container, Typography } from "@mui/material"
 import {createTheme} from "@mui/material/styles";
 import React, { useContext, useState } from 'react'
 
@@ -208,14 +208,4 @@ export const lightTheme = createTheme({
       fontWeight:"bold",
     },
     
-  }));
-
-  export const GlassyBox = styled(Box)(({theme}) => ({
-    background:"rgba(255,255,255,.05)",
-    backdropFilter:"blur(20px)",
-  }));
-
-  export const GlassyButton = styled(Button)(({theme}) => ({
-    background:"rgba(255,255,255,.05)",
-    backdropFilter:"blur(20px)",
   }));

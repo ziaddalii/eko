@@ -1,11 +1,10 @@
 import React, {useEffect, useRef} from 'react'
-import { GradientBoxRight, SectionBox, SectionContentBox, SectionTitle } from '../../contexts/ThemeContext'
+import { SectionBox, SectionContentBox, SectionTitle } from '../../contexts/ThemeContext'
 import { Box, Button, Grid,Paper,Typography, useTheme } from '@mui/material'
 import Card from "../../images/pricing/card.png"
 import "../../styles/pricing.css"
 import VanillaTilt from 'vanilla-tilt'
 import styled from "@emotion/styled";
-import CreativeDesign from "../../images/services/creative-design.png"
 
 function Pricing() {
     const theme = useTheme()
@@ -67,9 +66,7 @@ function Pricing() {
 
       const OrderButton = styled(Button)(({ theme }) => ({
         backgroundColor: theme.palette.primary.main,
-        // color: theme.palette.common.black,
         padding:".5rem",
-        // textAlign:"center",
         marginTop:"1rem",
         fontWeight:"bold",
         width:"100%"

@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { Box, Button, Grid, Typography, useTheme } from '@mui/material';
-import { GradientBoxLeft, GradientBoxRight, SectionBox, SectionContentBox } from '../../contexts/ThemeContext';
+import { GradientBoxLeft, SectionBox, SectionContentBox } from '../../contexts/ThemeContext';
 import Laptop from "../../images/hero/computing.png";
 function Hero() {
     const theme = useTheme()

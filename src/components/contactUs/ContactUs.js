@@ -1,7 +1,7 @@
 import { Box, Typography, useTheme } from '@mui/material'
-import React, { useState, useEffect } from 'react'
+import React, {useEffect } from 'react'
 
-import { BlueButton, GradientBoxLeft, SectionBox, SectionContentBox } from '../../contexts/ThemeContext'
+import {SectionBox, SectionContentBox } from '../../contexts/ThemeContext'
 import ContactUsForm from './ContactUsForm'
 
 

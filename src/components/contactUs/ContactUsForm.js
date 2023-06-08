@@ -1,9 +1,8 @@
 import React from 'react'
-import { SectionBox, SectionContentBox, SectionTitle } from '../../contexts/ThemeContext'
-import { Box, Button, Grid, MenuItem, Paper, TextField, Typography, useTheme } from '@mui/material'
+import { SectionBox} from '../../contexts/ThemeContext'
+import {Button, Grid, MenuItem, Paper, TextField, Typography } from '@mui/material'
 
 function ContactUsForm() {
-    const theme = useTheme()
   return (
     <SectionBox>
             <Grid container>

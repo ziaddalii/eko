@@ -1,6 +1,6 @@
 import React from 'react'
 import { SectionContentBox } from '../../contexts/ThemeContext'
-import { Box, Grid, Typography, useTheme } from '@mui/material';
+import {Grid, Typography, useTheme } from '@mui/material';
 import "../../styles/about/why-we-are-diff.css"
 import StarIcon from '@mui/icons-material/Star';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';

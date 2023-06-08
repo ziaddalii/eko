@@ -1,10 +1,9 @@
 import React from 'react'
 import { SectionBox, SectionContentBox, SectionTitle } from '../../contexts/ThemeContext'
-import { Box, Button, Grid, MenuItem, Paper, TextField, Typography, useTheme } from '@mui/material'
+import { Button, Grid, MenuItem, Paper, TextField, Typography, useTheme } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 
 function ContactUs() {
-    const theme = useTheme()
     const navigate = useNavigate()
 
   return (

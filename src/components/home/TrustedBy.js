@@ -1,5 +1,5 @@
 import React from 'react'
-import { SectionBox, SectionContentBox } from '../../contexts/ThemeContext'
+import { SectionBox } from '../../contexts/ThemeContext'
 import { Container, Grid, Typography, useTheme } from '@mui/material'
 import "../../styles/trusted.css"
 import Amazon from "../../images/trusted/amazon.png"

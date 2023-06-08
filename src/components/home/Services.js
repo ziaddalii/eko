@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
-import { GradientBoxRight, SectionBox, SectionContentBox, SectionTitle } from '../../contexts/ThemeContext'
+import { SectionBox, SectionContentBox, SectionTitle } from '../../contexts/ThemeContext'
 import { useTheme } from '@emotion/react'
-import { Box, Button, Grid, Paper, Typography } from '@mui/material'
-import Development from "../../images/services/development.png"
-import DigitalMarketing from "../../images/services/digital-marketing.png"
-import CreativeDesign from "../../images/services/creative-design.png"
+import { Button, Grid, Paper, Typography } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 
 

@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react'
-import { SectionBox, SectionContentBox, SectionTitle } from '../../contexts/ThemeContext'
+import {SectionBox, SectionContentBox, SectionTitle } from '../../contexts/ThemeContext'
 import { Box, Button, Grid,Paper,Typography, useTheme } from '@mui/material'
 import Card from "../../images/pricing/card.png"
 import "../../styles/pricing.css"
@@ -74,7 +74,7 @@ function Pricing() {
 
   return (
     <SectionBox>
-        <SectionContentBox>
+    <SectionContentBox>
             <Grid container data-aos="fade-right" alignItems={"center"} justifyContent={"space-between"} paddingBottom={"2rem"}>
                 <Grid item>
                     <SectionTitle>Pricing</SectionTitle>

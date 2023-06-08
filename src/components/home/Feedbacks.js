@@ -59,7 +59,13 @@ function Feedbacks() {
             minHeight: "200px",
             minWidth:"200px",
             borderRadius:"50%",
-            filter: "blur(200px)",
+            filter: "blur(50px)",
+            webkitBackfaceVisibility: "hidden",
+            webkitPerspective: "1000",
+            webkitTransform: "translate3d(0,0,0)",
+            webkitTransform: "translateZ(0)",
+            backfaceVisibility: "hidden",
+            opacity:".5"
         }}></Box>
 
         <SectionContentBox>

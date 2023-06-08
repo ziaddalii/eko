@@ -98,6 +98,11 @@ export const lightTheme = createTheme({
     minWidth:"200px",
     borderRadius:"50%",
     filter: "blur(200px)",
+    webkitBackfaceVisibility: "hidden",
+    webkitPerspective: "1000",
+    webkitTransform: "translate3d(0,0,0)",
+    webkitTransform: "translateZ(0)",
+    backfaceVisibility: "hidden",
     animation: 'move-left 10s infinite',
     '@keyframes move-left': {
       '0%': { transform: 'rotate(0deg)', top:"-50px" },
@@ -109,12 +114,21 @@ export const lightTheme = createTheme({
   export const GradientBoxRight = styled(Box)(({theme}) => ({
     position:"absolute",
     backgroundImage: `linear-gradient(45deg, ${theme.palette.primary.main} 30%, ${theme.palette.secondary.main} 90%)`,
-    height: "30vw",
-    width: "30vw",
+    maxHeight: "30vw",
+    maxWidth: "30vw",
     minHeight: "200px",
     minWidth:"200px",
     borderRadius:"50%",
     filter: "blur(200px)",
+    webkitBackfaceVisibility: "hidden",
+    webkitPerspective: "1000",
+    webkitTransform: "translate3d(0,0,0)",
+    webkitTransform: "translateZ(0)",
+    backfaceVisibility: "hidden",
+    perspective: "1000",
+    transform: "translate3d(0,0,0)",
+    transform: "translateZ(0)",
+    opacity:".5",
     animation: 'move-right 10s infinite',
     '@keyframes move-right': {
       '0%': { transform: 'rotate(0deg)', top:"-50px", right:"0px" },
@@ -138,6 +152,11 @@ export const lightTheme = createTheme({
   }));
 
   export const SectionBox = styled(Box)(({theme}) => ({
+    webkitBackfaceVisibility: "hidden",
+    webkitPerspective: "1000",
+    webkitTransform: "translate3d(0,0,0)",
+    webkitTransform: "translateZ(0)",
+    backfaceVisibility: "hidden",
     position:"relative",
     backgroundColor: theme.palette.backgroundColor.main,
   }));

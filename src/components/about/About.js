@@ -47,7 +47,13 @@ function About() {
                             </Box>
                         </Box>
                     </Box>
-                    <Box marginTop={"65vh"}>
+                    <Box marginTop={"65vh"} sx={{
+                        webkitBackfaceVisibility: "hidden",
+                        webkitPerspective: "1000",
+                        webkitTransform: "translate3d(0,0,0)",
+                        webkitTransform: "translateZ(0)",
+                        backfaceVisibility: "hidden",
+                    }}>
                         <WhoWeAre/>
                         <WhyWeAreDifferent/>
                         <OurVision/>

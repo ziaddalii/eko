@@ -41,7 +41,7 @@ function Portfolio() {
                             </Box>
                         </Box>
                     </Box>
-                    <Box marginTop={"60vh"}>
+                    <Box marginTop={"65vh"}>
                         <PortfolioGrid/>
                     </Box>
                 </Box>

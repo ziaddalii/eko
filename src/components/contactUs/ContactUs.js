@@ -40,7 +40,7 @@ function ContactUs() {
                             </Box>
                         </Box>
                         </Box>
-                        <Box marginTop={"60vh"}>
+                        <Box marginTop={"65vh"}>
                             <ContactUsForm/>
                         </Box>
                 </Box>

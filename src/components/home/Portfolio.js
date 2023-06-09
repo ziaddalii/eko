@@ -12,7 +12,6 @@ function Portfolio() {
     <SectionBox sx={{
         overflowX:"hidden",
     }}>
-    <GradientBoxRight></GradientBoxRight>
         <SectionContentBox>
             <Grid container data-aos="fade-left" alignItems={"center"} justifyContent={"space-between"} paddingBottom={"2rem"}>
                 <Grid item>

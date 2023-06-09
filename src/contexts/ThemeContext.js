@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { Box, Button, Container, Typography } from "@mui/material"
 import {createTheme} from "@mui/material/styles";
 import React, { useContext, useState } from 'react'
-
+import Aurora from "../images/auroras/1.png"
 const ThemeModeContext = React.createContext();
 
 export function useThemeMode(){
@@ -91,13 +91,14 @@ export const lightTheme = createTheme({
 
   export const GradientBoxLeft = styled(Box)(({theme}) => ({
     position:"absolute",
-    backgroundImage: `linear-gradient(45deg, ${theme.palette.primary.main} 30%, ${theme.palette.secondary.main} 90%)`,
+    backgroundImage : `url(${Aurora})`,
+    // backgroundImage: `linear-gradient(45deg, ${theme.palette.primary.main} 30%, ${theme.palette.secondary.main} 90%)`,
     height: "30vw",
     width: "30vw",
     minHeight: "200px",
     minWidth:"200px",
     borderRadius:"50%",
-    filter: "blur(200px)",
+    // filter: "blur(200px)",
     webkitBackfaceVisibility: "hidden",
     webkitPerspective: "1000",
     webkitTransform: "translate3d(0,0,0)",

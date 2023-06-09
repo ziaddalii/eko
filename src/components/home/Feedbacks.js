@@ -1,10 +1,12 @@
-import { Box, Grid, Typography, useTheme } from '@mui/material'
+import { Avatar, Box, Grid, Typography, useTheme } from '@mui/material'
 import React, { useState, useEffect, useRef } from 'react'
 import {SectionBox, SectionContentBox, SectionTitle } from '../../contexts/ThemeContext'
 import Stars from "../../images/Feedbacks/stars.png"
 import "../../styles/feedbacks.css"
 import { FeedbacksData } from '../../data/FeedbacksData'
 import VanillaTilt from 'vanilla-tilt'
+import Aurora from "../../images/auroras/5.png"
+
 function Feedbacks() {
     const theme = useTheme()
     const feedbackRef = useRef(null);
@@ -48,25 +50,23 @@ function Feedbacks() {
 
   return (
     <SectionBox>
-        <Box sx={{
-            position:"absolute",
-            top:"50%",
-            left:"50%",
-            transform:"translate(-50% , -50%)",
-            backgroundImage: `linear-gradient(45deg, ${theme.palette.primary.main} 30%, ${theme.palette.secondary.main} 90%)`,
-            height: "30vw",
-            width: "30vw",
-            minHeight: "200px",
-            minWidth:"200px",
-            borderRadius:"50%",
-            filter: "blur(50px)",
-            webkitBackfaceVisibility: "hidden",
-            webkitPerspective: "1000",
-            webkitTransform: "translate3d(0,0,0)",
-            webkitTransform: "translateZ(0)",
-            backfaceVisibility: "hidden",
-            opacity:".5"
-        }}></Box>
+        <Box position={"absolute"} sx={{
+            animation: 'move-left 10s infinite',
+            '@keyframes move-left': {
+              '0%': { transform: 'rotate(0deg)', left:"30%", top:"-20px" },
+              '100%': { transform: 'rotate(0deg)', left:"30%", top:"-20px" },
+              '50%': { transform: 'rotate(45deg)', left:"30%", top:"40px" },
+            },
+        }}>
+        <Avatar sx={{
+            borderRadius:"0",
+            width: "100vw",
+            height:"100%",
+            minHeight: "100%",
+            minWidth:"400px",
+        }} src={Aurora}/>
+        
+        </Box>
 
         <SectionContentBox>
             <Grid container data-aos="fade-right" alignItems={"center"} justifyContent={"space-between"} paddingBottom={"2rem"}>

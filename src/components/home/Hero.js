@@ -1,7 +1,8 @@
 import React, { useRef } from 'react'
-import { Box, Button, Grid, Typography, useTheme } from '@mui/material';
+import { Avatar, Box, Button, Grid, Typography, useTheme } from '@mui/material';
 import { GradientBoxLeft, SectionBox, SectionContentBox } from '../../contexts/ThemeContext';
 import Laptop from "../../images/hero/computing.png";
+import Aurora from "../../images/auroras/4.png"
 function Hero() {
     const theme = useTheme()
     const home = useRef(null)
@@ -13,7 +14,24 @@ function Hero() {
     }
   return (
     <SectionBox ref={home}>
-        <GradientBoxLeft></GradientBoxLeft>
+        <Box position={"absolute"} sx={{
+            animation: 'move-left 10s infinite',
+            '@keyframes move-left': {
+              '0%': { transform: 'rotate(0deg)', right:"50%", top:"-20px" },
+              '100%': { transform: 'rotate(0deg)', right:"50%", top:"-20px" },
+              '50%': { transform: 'rotate(90deg)', right:"50%", top:"75px" },
+            },
+        }}>
+        <Avatar sx={{
+            borderRadius:"0",
+            width: "100%",
+            height:"100%",
+            minHeight: "100%",
+            minWidth:"400px",
+        }} src={Aurora}/>
+        
+        </Box>
+
         <SectionContentBox>
             <Box pt={"4rem"}>
                 <Grid container alignItems={"center"} justifyContent={"center"}>

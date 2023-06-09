@@ -28,6 +28,7 @@ function Hero() {
             height:"100%",
             minHeight: "100%",
             minWidth:"400px",
+            opacity:".5"
         }} src={Aurora}/>
         
         </Box>

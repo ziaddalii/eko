@@ -39,7 +39,7 @@ function Portfolio() {
                                 <img className='portfolio-img' src={portfolioPost.imgUrl} style={{height:"215px", objectFit:"cover"}}/>
                                 <Box className="portfolio-desc" sx={{
                                     background:"rgba(0,0,0,.15)", 
-                                    backdropFilter:"blur(10px)",
+                                    backdropFilter:"blur(6px)",
                                     padding:"1rem",
                                     position:"absolute",
                                     bottom:"5%",

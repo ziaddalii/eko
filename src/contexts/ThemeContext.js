@@ -89,69 +89,6 @@ export const lightTheme = createTheme({
     }},
   })
 
-  export const GradientBoxLeft = styled(Box)(({theme}) => ({
-    position:"absolute",
-    backgroundImage : `url(${Aurora})`,
-    // backgroundImage: `linear-gradient(45deg, ${theme.palette.primary.main} 30%, ${theme.palette.secondary.main} 90%)`,
-    height: "30vw",
-    width: "30vw",
-    minHeight: "200px",
-    minWidth:"200px",
-    borderRadius:"50%",
-    // filter: "blur(200px)",
-    webkitBackfaceVisibility: "hidden",
-    webkitPerspective: "1000",
-    webkitTransform: "translate3d(0,0,0)",
-    webkitTransform: "translateZ(0)",
-    backfaceVisibility: "hidden",
-    animation: 'move-left 10s infinite',
-    '@keyframes move-left': {
-      '0%': { transform: 'rotate(0deg)', top:"-50px" },
-      '100%': { transform: 'rotate(0deg)', top:"-50px" },
-      '50%': { transform: 'rotate(20deg)', top:"150px" },
-    },
-  }));
-
-  export const GradientBoxRight = styled(Box)(({theme}) => ({
-    position:"absolute",
-    backgroundImage: `linear-gradient(45deg, ${theme.palette.primary.main} 30%, ${theme.palette.secondary.main} 90%)`,
-    maxHeight: "30vw",
-    maxWidth: "30vw",
-    minHeight: "200px",
-    minWidth:"200px",
-    borderRadius:"50%",
-    filter: "blur(200px)",
-    webkitBackfaceVisibility: "hidden",
-    webkitPerspective: "1000",
-    webkitTransform: "translate3d(0,0,0)",
-    webkitTransform: "translateZ(0)",
-    backfaceVisibility: "hidden",
-    perspective: "1000",
-    transform: "translate3d(0,0,0)",
-    transform: "translateZ(0)",
-    opacity:".5",
-    animation: 'move-right 10s infinite',
-    '@keyframes move-right': {
-      '0%': { transform: 'rotate(0deg)', top:"-50px", right:"0px" },
-      '100%': { transform: 'rotate(0deg)', top:"-50px", right:"0px" },
-      '50%': { transform: 'rotate(20deg)', top:"150px", right:"0px" },
-    },
-  }));
-
-  
-  export const BlueButton = styled(Button)(({theme}) => ({
-    backgroundColor: theme.palette.primary.main,
-    color:theme.palette.primary.contrastText,
-    margin: 5,
-    "&:hover": {
-        backgroundColor:theme.palette.primary.dark,
-    },
-    "&:disabled": {
-        backgroundColor: "grey",
-        color: "white",
-    },
-  }));
-
   export const SectionBox = styled(Box)(({theme}) => ({
     webkitBackfaceVisibility: "hidden",
     webkitPerspective: "1000",
@@ -165,9 +102,9 @@ export const lightTheme = createTheme({
   export const SectionContentBox = styled(Container)(({theme}) => ({
     zIndex:"1",
     position:"relative",
-    padding:"6rem 0",
+    padding:"4rem 0",
     [theme.breakpoints.down('sm')]: {
-      padding: '4rem 2rem',
+      padding: '3rem 2rem',
     },
   }));
 

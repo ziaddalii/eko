@@ -7,15 +7,22 @@ Source: https://sketchfab.com/3d-models/abstract-rainbow-translucent-pendant-fd7
 Title: Abstract Rainbow Translucent Pendant
 */
 
-import React, { useMemo, useRef } from 'react'
+import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { Environment, MeshDistortMaterial, OrbitControls, useGLTF, useTexture } from '@react-three/drei';
 import { Canvas, useFrame } from '@react-three/fiber'
 // import "../../models/hero-abstract/scene.bin"
 import { MeshPhysicalMaterial } from 'three'
+import { useThemeMode } from '../../contexts/ThemeContext';
 
 function Model (props){
   const { nodes, materials } = useGLTF(require('../../models/abstractModel.glb'));
   const texture = useTexture(require('../../models/Material_0_baseColor.png'));
+  const {darkMode, setDarkMode} = useThemeMode();
+  const [darkTheme, setDarkTheme] = useState(darkMode)
+
+  useEffect(() => {
+    setDarkTheme(darkMode)
+  }, [darkMode])
 
   const groupRef = useRef();
   useFrame(() => (groupRef.current.rotation.y -= 0.003 ))
@@ -24,14 +31,14 @@ function Model (props){
     () =>
       new MeshPhysicalMaterial({
         map: texture,
-        opacity: 0.6, // Set the desired opacity value (0 to 1)
-        roughness: 0.1, // Set the desired roughness value (0 to 1)
-        metalness: 0.8, // Set the desired metalness value (0 to 1)
-        transparent: true, // Enable transparency for the material
+        opacity: darkTheme ? 0.7 : 1,
+        roughness: 0.1,
+        metalness: 0.8,
+        transparent: true,
       }),
     [texture]
   );
-console.log("materials:",materials);
+
   return (
     <mesh {...props}>
       <group {...props} dispose={null}>

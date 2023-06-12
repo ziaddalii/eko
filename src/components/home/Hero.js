@@ -10,7 +10,7 @@ function Hero() {
     const home = useRef(null)
     const scrollToNextSection = (elementRef) => {
         window.scrollTo({
-            top: elementRef.current.offsetHeight,
+            top: elementRef.current.offsetHeight- 75,
             behavior:"smooth",
         })
     }
@@ -36,7 +36,7 @@ function Hero() {
         </Box>
 
         <SectionContentBox>
-            <Box pt={"1rem"}>
+            <Box pt={"3rem"}>
                 <Grid container alignItems={"center"} justifyContent={"center"}>
                     <Grid item xs={12} md={6} justifyContent={"center"} alignItems={"center"}  data-aos="fade-right">
                         <Box>

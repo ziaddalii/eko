@@ -10,7 +10,6 @@ import Pricing from './Pricing'
 import OurStatistics from './OurStatistics'
 import ContactUs from './ContactUs'
 
-
 function Home() {
   const theme = useTheme()
   useEffect(() => {

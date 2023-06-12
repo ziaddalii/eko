@@ -3,6 +3,8 @@ import { Avatar, Box, Button, Grid, Typography, useTheme } from '@mui/material';
 import { GradientBoxLeft, SectionBox, SectionContentBox } from '../../contexts/ThemeContext';
 import Laptop from "../../images/hero/computing.png";
 import Aurora from "../../images/auroras/4.png"
+import {AbstractModel} from './AbstractModel';
+
 function Hero() {
     const theme = useTheme()
     const home = useRef(null)
@@ -34,7 +36,7 @@ function Hero() {
         </Box>
 
         <SectionContentBox>
-            <Box pt={"4rem"}>
+            <Box pt={"1rem"}>
                 <Grid container alignItems={"center"} justifyContent={"center"}>
                     <Grid item xs={12} md={6} justifyContent={"center"} alignItems={"center"}  data-aos="fade-right">
                         <Box>
@@ -70,8 +72,12 @@ function Hero() {
                         >Learn More</Button>
                     </Grid>
 
-                    <Grid item container justifyContent={"center"} alignItems={"center"} xs={12} md={6} marginTop={{md:"0", xs:"1rem"}} data-aos="fade-left">
-                        <img className='hero-img' src={Laptop}/>
+                    <Grid item container justifyContent={"center"} alignItems={"center"} xs={12} md={6} marginTop={{md:"0", xs:"1rem"}} data-aos="fade-left"
+                    height={"500px"}
+                    >
+                        
+                        <AbstractModel/>
+{/*                        <img src={require('../../images/hero/computing.png')}/> */}
                     </Grid>
                 </Grid>
             </Box>

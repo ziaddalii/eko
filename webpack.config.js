@@ -11,6 +11,13 @@ module.exports = {
         filename: 'bundle.js',
         publicPath: '/eko/',
     },
+    
+    devServer: {
+        headers: { 
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
+        }
+     },
 
     plugins: [
         new HtmlWebpackPlugin({
@@ -35,7 +42,7 @@ module.exports = {
                 use: ['style-loader','css-loader']
             }, 
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                test: /\.(png|svg|jpg|jpeg|gif|glb|bin|gltf)$/i,
                 type: 'asset/resource',
                 generator: {
                    filename: 'images/[name][ext]'

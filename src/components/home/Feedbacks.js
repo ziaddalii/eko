@@ -5,7 +5,7 @@ import Stars from "../../images/Feedbacks/stars.png"
 import "../../styles/feedbacks.css"
 import { FeedbacksData } from '../../data/FeedbacksData'
 import VanillaTilt from 'vanilla-tilt'
-import Aurora from "../../images/auroras/5.png"
+import Aurora from "../../images/auroras/2.png"
 
 function Feedbacks() {
     const theme = useTheme()

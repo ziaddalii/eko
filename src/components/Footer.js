@@ -2,7 +2,7 @@ import React from 'react'
 import { SectionBox, SectionContentBox, TypographyLinkFooter } from '../contexts/ThemeContext'
 import { Box, Grid, useTheme } from '@mui/material'
 import { Typography } from '@mui/material';
-import Logo from "../images/logo2.png"
+import Logo from "../images/logo.png"
 import { Link, NavLink } from 'react-router-dom';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';

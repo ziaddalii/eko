@@ -1,7 +1,7 @@
 import { AppBar, Box, Button, Container, Grid, SwipeableDrawer, Toolbar, useTheme } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import { NavLink } from 'react-router-dom'
-import Logo from "../../images/logo2.png"
+import Logo from "../../images/logo.png"
 import "../../styles/navbar.css"
 import React, { useState } from 'react'
 import MobileNavbar from './MobileNavbar';

@@ -1,7 +1,6 @@
 import React, { useRef } from 'react'
 import { Avatar, Box, Button, Grid, Typography, useTheme } from '@mui/material';
-import { GradientBoxLeft, SectionBox, SectionContentBox } from '../../contexts/ThemeContext';
-import Laptop from "../../images/hero/computing.png";
+import { SectionBox, SectionContentBox } from '../../contexts/ThemeContext';
 import Aurora from "../../images/auroras/1.png"
 import {AbstractModel} from './AbstractModel';
 

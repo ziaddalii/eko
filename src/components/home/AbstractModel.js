@@ -1,5 +1,5 @@
 import React, {useMemo, useRef } from 'react'
-import { Environment, useGLTF, useTexture } from '@react-three/drei';
+import { Environment, OrbitControls, useGLTF, useTexture } from '@react-three/drei';
 import { Canvas, useFrame } from '@react-three/fiber'
 import { MeshPhysicalMaterial } from 'three'
 

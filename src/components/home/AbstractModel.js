@@ -34,7 +34,7 @@ function Model (props){
           />
         </group>
       </group>
-      <OrbitControls makeDefault enableZoom={false} minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} />
+      <OrbitControls makeDefault enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} />
     </mesh>
   )
 }

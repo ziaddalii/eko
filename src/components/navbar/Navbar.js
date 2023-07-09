@@ -11,7 +11,7 @@ import { useThemeMode } from '../../contexts/ThemeContext';
 function Navbar() {
   const [toggleSideNavbar, setToggleSideNavbar] = useState(false)
   const theme = useTheme()
-  const {darkMode, setDarkMode} = useThemeMode();
+  const {darkMode} = useThemeMode();
 
   return (
     <AppBar sx={{
@@ -59,7 +59,7 @@ function Navbar() {
                 },
               }}
               >
-                <MobileNavbar/>
+                <MobileNavbar setToggleSideNavbar={setToggleSideNavbar}/>
               </SwipeableDrawer>
             </Grid>
           </Grid>

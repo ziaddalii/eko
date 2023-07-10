@@ -20,7 +20,7 @@ function Blog() {
                     backgroundColor:"#7A4DCC",
                     borderRadius:"0 0 50% 50%",
                     height:"70vh",
-                    width:"150%",
+                    width:"150vw",
                     minWidth:"1900px",
                     position: "absolute",
                     transform: "translate(-50%, 0%)",

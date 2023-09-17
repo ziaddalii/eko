@@ -49,7 +49,7 @@ function Feedbacks() {
       }, []);
 
   return (
-    <SectionBox>
+    <SectionBox sx={{overflow:"hidden"}}>
         <Box position={"absolute"} sx={{
             animation: 'move-left 10s infinite',
             '@keyframes move-left': {
